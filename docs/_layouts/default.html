@@ -1,10 +1,34 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="/css/main.css">
-    </head>
-    <body>
-        <h1>Well hello there.</h1>
-        <p>I'm Trevor.</p>
-    </body>
-</html>
+	<html>
+		<head>
+			<title>{{ page.title }}</title>
+			<!-- link to main stylesheet -->
+			<link rel="stylesheet" type="text/css" href="/css/main.css">
+		</head>
+		<body>
+            <div class="header">
+                <div class="pure-menu pure-menu-horizontal">
+                    <a href="#" class="pure-menu-heading pure-menu-link">TREVOR J. HILTON</a>
+                    <ul class="pure-menu-list">
+                        <li class="pure-menu-item"><a class="pure-menu-link" href="/">Home</a></li>
+                        <li class="pure-menu-item"><a class="pure-menu-link" href="/about">About</a></li>
+                        <li class="pure-menu-item"><a class="pure-menu-link" href="/cv">CV</a></li>
+                        <li class="pure-menu-item"><a class="pure-menu-link" href="/blog">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+
+			<div class="container">
+			
+			{{ content }}
+			
+            </div><!-- /.container -->
+            
+			<footer>
+	    		<ul>
+	        		<li><a href="mailto:trevor.hilton@gmail.com">email</a></li>
+	        		<li><a href="https://github.com/hiltontj">github.com/hiltontj</a></li>
+				</ul>
+			</footer>
+		</body>
+	</html>
