@@ -6,11 +6,18 @@ permalink: /about/
 <div class="pure-g">
     <div class="pure-u-1-4">
         <div class="porthole">
-            <img class="pure-img" src="../assets/profile.jpg">
+            {% for image in site.static_files %}
+                {% if image.path contains 'profile.jpg' %}
+                    <img class="pure-img" src="{{ image.path }}">
+                {% endif %}
+            {% endfor %}
         </div>
     </div>
     <div class="pure-u-3-4">
-
+        <div class="card margin-left margin-right font-serif">
+            I am a Toronto based software engineer.
+        </div>
+        
     </div>
 
 </div>
