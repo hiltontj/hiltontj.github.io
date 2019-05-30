@@ -1,2 +1,5 @@
 # jekyll ignores:
 _site/
+Gemfile
+Gemfile.lock
+.sass-cache
