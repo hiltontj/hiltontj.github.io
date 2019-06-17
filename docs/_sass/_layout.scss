@@ -2,14 +2,30 @@
     height: 32px;
     padding-top: 8px;
     padding-bottom: 1px;
-    border-bottom: solid 1px #bababa;
+    border-bottom: solid 1px $grey-light;
 
     .pure-menu-list {
         float: right;
     }
 }
 
-.header, .container {
+.footer {
+    height: 32px;
+    padding-top: 8px;
+    border-top: solid 1px $grey-light;
+
+    div {
+        font-size: 11px;
+        display: inline-block;
+    }
+
+    div.footer-item {
+       margin-left: 11px;
+       color: $grey;
+    }
+}
+
+.header, .container, .footer{
     max-width: 750px;
     margin-left: auto;
     margin-right: auto;
@@ -33,4 +49,12 @@
 
 .margin-right {
     margin-right: 24px;
+}
+
+.float-right {
+    float: right;
+}
+
+.spacer {
+    height: 11px;
 }

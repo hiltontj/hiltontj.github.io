@@ -1,0 +1,47 @@
+---
+layout: default
+title: Trevor J. Hilton
+permalink: /aboutsite/
+---
+<div class="pure-g">
+
+    <div class="pure-u-1-4">
+        <div class="rounded">
+            {% for image in site.static_files %}
+                {% if image.path contains 'bean_bags.jpg' %}
+                    <img class="pure-img" src="{{ image.path }}">
+                {% endif %}
+            {% endfor %}
+        </div>
+        
+    </div>
+
+    <div class="pure-u-3-4">
+        <div class="margin-left margin-right font-serif">
+            <p>This website is hosted on <a href="https://github.com/hiltontj/page">Github</a> using <a href="https://pages.github.com/">Github Pages</a>.</p>
+            <p>Powered by <a href="https://jekyllrb.com/">Jekyll</a>.</p>
+            <p>Built using <a href="https://purecss.io/">Pure CSS</a></p>
+            
+        </div>
+    </div>
+
+    <div class="pure-u-1 spacer"></div>
+
+    <div class="pure-u-1-4">
+        <div class="rounded">
+            {% for image in site.static_files %}
+                {% if image.path contains 'coffee.jpg' %}
+                    <img class="pure-img" src="{{ image.path }}">
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="pure-u-3-4">
+        <div class="margin-left margin-right font-serif">
+            <p>All of the photos on this website are my own. If you would like to see more, check out <a href="https://www.flickr.com/photos/152485515@N03/">my Flickr page</a>.</p>
+            <p>This is a work in progress.</p>
+        </div>
+    </div>
+
+</div>
