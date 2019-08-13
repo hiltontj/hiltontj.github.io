@@ -13,6 +13,7 @@
     height: 32px;
     padding-top: 8px;
     border-top: solid 1px $grey-light;
+    position: relative;
 
     div {
         font-size: 11px;
@@ -22,6 +23,21 @@
     div.footer-item {
        margin-left: 11px;
        color: $grey;
+    }
+
+    div.footer-links {
+        margin: 0 auto;
+        display: table;
+    }
+
+    div.footer-right {
+        float: right;
+        position: absolute;
+        right: 0;
+    }
+
+    img.footer-img {
+        height: 24px;
     }
 }
 
@@ -51,10 +67,10 @@
     margin-right: 24px;
 }
 
-.float-right {
-    float: right;
-}
-
 .spacer {
     height: 11px;
 }
+
+.pos-abs {
+    position: absolute;
+}  

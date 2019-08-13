@@ -2,9 +2,22 @@
 layout: default
 title: Trevor J. Hilton
 ---
-<div>Hello! I'm Trevor.</div>
+<div class="pure-g">
+    <div class="pure-u-1 pure-u-sm-1-4">
+        <div class="porthole">
+            {% for image in site.static_files %}
+                {% if image.path contains 'profile.jpg' %}
+                    <img class="pure-img" src="{{ image.path }}">
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    <div class="pure-u-1 pure-u-sm-3-4">
+        <div class="margin-left margin-right font-serif text-grey-dark">
+            <p>Hi, my name is Trevor Hilton. I am a Toronto-based software engineer. I received a B.Eng. in Electrical and Biomedical Engineering from McMaster University in 2014. I then received a M.A.Sc. in Biomedical Engineering from the University of Toronto in 2016. I have since worked in the field of healthcare integration as a software engineer for Interfaceware Inc.</p>
 
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/152485515@N03/46801400705/in/dateposted-public/" title="chicago026_delta400">
-    <img src="https://live.staticflickr.com/65535/46801400705_09b1d4b4ca.jpg" width="500" height="317" alt="chicago026_delta400">
-</a>
-<script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+            <p></p>
+        </div>
+    </div>
+
+</div>
