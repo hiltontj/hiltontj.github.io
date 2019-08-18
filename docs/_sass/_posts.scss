@@ -1,5 +1,15 @@
 
 /* post is used for styling the markdown posts on site*/
 .post {
-   padding: 0px 32px 0px 32px;
+   padding: 0px 24px 0px 24px;
+
+   h1 {
+      font-size: 28px;
+   }
+   p {
+      &.meta {
+         color: $grey;
+      }
+      font-size: 24px;
+   }
 }
