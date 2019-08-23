@@ -41,7 +41,14 @@
 								<a  target="_blank" href="https://www.linkedin.com/in/trevorhilton"><img class="pure-img footer-img" src="{{ image.path }}"></a>
 							{% endif %}
 						{% endfor %}
-					</div>				
+					</div>
+					<div class="footer-item">
+						{% for image in site.static_files %}
+							{% if image.path contains 'twitter.png' %}
+								<a  target="_blank" href="https://twitter.com/Trevor_Hilton"><img class="pure-img footer-img" src="{{ image.path }}"></a>
+							{% endif %}
+						{% endfor %}
+					</div>			
 				</div>
 			</div>
 		</body>

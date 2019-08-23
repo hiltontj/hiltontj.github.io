@@ -1,18 +1,33 @@
-
-/* post is used for styling the markdown posts on site*/
-.post {
+.post, .posts {
    padding: 0px 12px 0px 12px;
+}
 
+.posts {
    h1 {
-      font-size: 20px;
+      font-size: 30px;
+      font-size: calc(1vh + 1vw + 2vmin);
+   }
+
+   li {
+      font-size: 30px;
+      font-size: calc(1vh + 1vw + 1vmin);
+   }
+}
+
+.post {
+   h1 {
+      font-size: 30px;
+      font-size: 5.9vw;
    }
    h2 {
-      font-size: 18px;
+      font-size: 30px;
+      font-size: 3.0vh;
    }
    p {
       &.meta {
          color: $grey;
       }
-      font-size: 16px;
+      font-size: 30px;
+      font-size: calc(1vh + 1vw + 2vmin);
    }
 }
