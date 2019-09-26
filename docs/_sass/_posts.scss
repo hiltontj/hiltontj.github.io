@@ -2,6 +2,10 @@
    padding: 0px 12px 0px 12px;
 }
 
+ul.post {
+   list-style-type: none;
+}
+
 .posts {
    h1 {
       font-size: 30px;
@@ -10,24 +14,24 @@
 
    li {
       font-size: 30px;
-      font-size: calc(1vh + 1vw + 1vmin);
+      font-size: calc(1.5vh + 0.5vw + 1vmin);
    }
 }
 
 .post {
    h1 {
       font-size: 30px;
-      font-size: 4vw;
+      font-size: calc(1vh + 1vw + 2vmin);
    }
    h2 {
       font-size: 30px;
-      font-size: 3.0vh;
+      font-size: calc(1vh + 1vw + 1vmin);
    }
    p {
       &.meta {
          color: $grey;
       }
       font-size: 30px;
-      font-size: calc(1vh + 1vw + 2vmin);
+      font-size: calc(1.5vh + 0.5vw + 1vmin);
    }
 }
